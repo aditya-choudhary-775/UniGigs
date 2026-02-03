@@ -17,17 +17,22 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen w-full bg-linear-to-b bg-[radial-gradient(var(--color-gray-300),transparent_1px)] from-cyan-100 via-blue-50 to-cyan-100 bg-size-[10px_10px] p-4">
+    <div className="relative min-h-screen w-full bg-[radial-gradient(var(--color-gray-300),transparent_1px)] bg-size-[10px_10px] p-4">
+      <div className="fixed bg-linear-to-b from-cyan-100 via-blue-50 to-cyan-100 m-auto inset-0 -z-1 h-full" />
       <Navbar />
 
       <Hero />
 
       <div className="mx-auto mt-8 flex flex-col items-center font-bold">
-        <span className="mt-5 mb-16 text-4xl text-teal-600 font-architects-daughter">How It Works ?</span>
-        <div className="font-architects-daughter my-20 flex justify-center gap-30 text-2xl relative left-26">
-          <Doodle5 className="absolute -left-64 top-9" />
-          <Doodle3 className="absolute -left-42 top-14" />
-          <span className="absolute -left-50 top-80 text-5xl font-architects-daughter text-teal-600">You</span>
+        <span className="font-architects-daughter mt-5 mb-16 text-4xl text-teal-600">
+          How It Works ?
+        </span>
+        <div className="font-architects-daughter relative left-26 my-20 flex justify-center gap-30 text-2xl">
+          <Doodle5 className="absolute top-9 -left-64" />
+          <Doodle3 className="absolute top-14 -left-42" />
+          <span className="font-architects-daughter absolute top-80 -left-50 text-5xl text-teal-600">
+            You
+          </span>
           <span className="relative">
             <Doodle1 className="absolute -top-26 -right-12 size-[240px]" />
             <Doodle2 className="absolute -top-32 left-20" />
@@ -43,8 +48,8 @@ export default function Home() {
             Get it done and pay
           </span>
         </div>
-        <span className="text-5xl font-architects-daughter my-10">Or</span>
-        <div className="font-architects-daughter my-20 flex justify-center gap-30 text-2xl relative left-26">
+        <span className="font-architects-daughter my-10 text-5xl">Or</span>
+        <div className="font-architects-daughter relative left-26 my-20 flex justify-center gap-30 text-2xl">
           <Doodle4 className="absolute -top-42 -left-56" />
           <div className="relative">
             <Doodle1 className="absolute -top-28 -right-11 size-[260px]" />

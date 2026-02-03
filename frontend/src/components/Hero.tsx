@@ -32,16 +32,16 @@ export const Hero = () => {
           college.
         </p>
         <div className="flex w-full gap-6">
-          <button className="cursor-pointer rounded-xl bg-teal-400 px-4 py-2 text-white transition-all duration-200 text-shadow-md hover:bg-emerald-400 hover:shadow-xl">
+          <button className="cursor-pointer rounded-md bg-teal-400 px-4 py-2 text-white transition-all duration-200 text-shadow-md hover:bg-emerald-400 hover:shadow-xl">
             Post a Task
           </button>
-          <button className="hover:bg-gray-10 flex cursor-pointer items-center gap-2 rounded-xl border border-teal-500 text-teal-500 bg-white px-4 py-2 transition-all duration-200 hover:bg-emerald-50">
+          <button className="hover:bg-gray-10 flex cursor-pointer items-center gap-2 rounded-md border border-teal-500 text-teal-500 px-4 py-2 transition-all duration-200">
             Find Work
           </button>
         </div>
       </div>
       <div className="col-span-1 flex items-center justify-center p-7">
-        <div className="h-[350px] w-full rounded-xl border border-neutral-300 bg-black"></div>
+        <div className="h-[350px] w-full rounded-xl border border-neutral-200 backdrop-blur-sm shadow-xl"></div>
       </div>
     </div>
   );

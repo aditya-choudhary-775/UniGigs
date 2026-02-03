@@ -8,8 +8,8 @@ export const Arrow = ({ className }: { className?: string }) => {
       width="287.32954486938405"
       height="98.66974046648954"
       viewBox="197.33334350585938 123.82313383174699 287.32954486938405 98.66974046648954"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       data-color-mode="light"
       className={className}
       
