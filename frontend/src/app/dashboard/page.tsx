@@ -1,3 +1,4 @@
+import { CreateTask } from '@/components/create-task';
 import { FeedTask } from '@/components/feedTask';
 import React from 'react'
 
@@ -207,6 +208,7 @@ export default function DashboardPage () {
 
   return (
     <div className='bg-red-50 w-full h-full flex flex-wrap items-center gap-6 p-3 overflow-y-scroll'>
+      <CreateTask />
       {tasks.map((task) => {
         return (
           <FeedTask key={task.id} task={task} />
