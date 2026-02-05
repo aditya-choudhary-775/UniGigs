@@ -1,3 +1,4 @@
+import { Smiley } from "@/components/smiley";
 import { Underline } from "@/components/underline";
 import { IconBrandGoogle, IconKey, IconUserPlus } from "@tabler/icons-react";
 import React from "react";
@@ -14,8 +15,11 @@ export default function AuthPage() {
         </div>
         <form className="flex h-[480px] flex-col items-center gap-6">
           <span className="font-architects-daughter relative mb-6 text-2xl text-teal-600">
-            <Underline className="absolute -top-21 -left-7 size-[250px]" />
-            Welcome Back
+            <Underline className="absolute -top-18 -left-2 size-[250px]" />
+            <div className="flex items-center justify-center gap-2">
+              <Smiley className="size-14" />
+              Welcome Back
+            </div>
           </span>
           <button className="z-1 flex cursor-pointer justify-center gap-4 rounded-md border border-teal-500 bg-cyan-100 px-8 py-2 font-mono text-teal-600 transition-all duration-200 hover:bg-teal-100 active:scale-90">
             <IconBrandGoogle />
