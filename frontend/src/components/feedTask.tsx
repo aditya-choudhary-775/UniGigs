@@ -4,11 +4,11 @@ import { Task } from "../../types/task";
 import { getTimeLeft } from "../../utils/getTimeLeft";
 import Image from "next/image";
 
-interface GigCardProps {
+interface CardProps {
   task: Task;
 }
 
-export const FeedTask = ({ task }: GigCardProps) => {
+export const FeedTask = ({ task }: CardProps) => {
   const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(task.deadline));
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export const FeedTask = ({ task }: GigCardProps) => {
   const { days, hours, minutes, seconds, expired } = timeLeft;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2 rounded-xl border p-2 bg-neutral-100 hover:bg-neutral-200 w-[300px] [box-shadow:5px_5px_0px_black] hover:[box-shadow:2px_2px_0px_theme(colors.gray.500)] transition-all duration-200 group">
+    <div className="flex flex-col items-center justify-center gap-2 rounded-xl border p-2 bg-neutral-50 hover:bg-neutral-200 w-[300px] [box-shadow:5px_5px_0px_black] hover:[box-shadow:2px_2px_0px_theme(colors.gray.500)] transition-all duration-200 group">
       <div className="flex w-full items-center gap-2">
         <Image
           src={task.profilePicLink}
