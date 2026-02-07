@@ -1,6 +1,7 @@
 import { OpenTaskCard } from "@/components/open-task-card";
 import { IconTrash } from "@tabler/icons-react";
 import React from "react";
+import { OpenTask } from "../../../../types/open-task";
 
 export default function PostsPage() {
   const days = 4;
@@ -8,7 +9,7 @@ export default function PostsPage() {
   const minutes = 50;
   const seconds = 36;
 
-  const openTasks = [
+  const openTasks: OpenTask[] = [
     {
       id: 1,
       title: "Poster design for cultural fest",

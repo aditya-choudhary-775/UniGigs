@@ -1,8 +1,9 @@
 import { InProgressTaskCard } from "@/components/in-progress-task-card";
 import React from "react";
+import { InProgressTask } from "../../../../../types/in-progress-task";
 
 export default function InProgressPage() {
-  const inProgressTasks = [
+  const inProgressTasks: InProgressTask[] = [
     {
       id: 101,
       title: "Poster design for tech symposium",

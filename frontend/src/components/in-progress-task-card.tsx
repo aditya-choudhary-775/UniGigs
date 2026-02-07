@@ -2,25 +2,11 @@ import React from "react";
 import { InProgressTask } from "../../types/in-progress-task";
 import { IconMessage2, IconTrash } from "@tabler/icons-react";
 import Image from "next/image";
+import { getFormattedDate } from "../../utils/getFormattedDate";
 
 interface CardProps {
   task: InProgressTask;
 }
-
-const getFormattedDate = (isoString: string) => {
-  const date = new Date(isoString);
-
-  const formatted = date.toLocaleString("en-IN", {
-    day: "numeric",
-    month: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-  });
-
-  return formatted;
-};
 
 export const InProgressTaskCard = ({ task }: CardProps) => {
   return (
@@ -35,7 +21,7 @@ export const InProgressTaskCard = ({ task }: CardProps) => {
             height={24}
             width={24}
             alt={task.assignedTo.name}
-            className="aspect-square size-8 rounded-full border border-black"
+            className="aspect-square size-8 rounded-full border border-black cursor-pointer"
           ></Image>
         </div>
 
