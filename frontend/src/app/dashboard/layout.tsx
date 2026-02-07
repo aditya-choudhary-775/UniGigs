@@ -38,7 +38,7 @@ export default function Dashboardlayout({
             <div className="flex items-center gap-2">
               <IconUserCircle className="size-9 rounded-full p-1 transition-all duration-200 active:scale-85 cursor-pointer" />
               <div className="flex items-center justify-center cursor-pointer">
-                <span className="text-md font-bold">John</span>
+                <span className="text-md font-bold">Aditya</span>
                 <IconChevronDown className="size-4" />
               </div>
             </div>

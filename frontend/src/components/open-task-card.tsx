@@ -22,7 +22,7 @@ export const OpenTaskCard = ({ task }: CardProps) => {
   const { days, hours, minutes, seconds, expired } = timeLeft;
 
   return (
-    <div className="group group flex w-[300px] flex-col items-center justify-center gap-3 rounded-md border bg-neutral-50 p-2 pb-3 [box-shadow:5px_5px_0px_black] transition-all duration-200 hover:bg-neutral-200 hover:[box-shadow:2px_2px_0px_theme(colors.gray.500)]">
+    <div className="group group flex w-[300px] flex-col items-center justify-center gap-2 rounded-md border bg-neutral-50 p-2 pb-2 [box-shadow:5px_5px_0px_black] transition-all duration-200 hover:bg-neutral-200 hover:[box-shadow:2px_2px_0px_theme(colors.gray.500)]">
       <div className="flex w-full items-start justify-between gap-2 p-1">
         <div className="flex flex-col items-center justify-center rounded-md border p-1">
           <div className="flex items-start justify-center">
@@ -76,12 +76,12 @@ export const OpenTaskCard = ({ task }: CardProps) => {
         </div>
       </div>
       <div className="flex w-full items-center justify-between pl-1">
-        <IconTrash className="size-9 cursor-pointer rounded-md border border-black bg-red-50 p-1 text-red-500 [box-shadow:-2px_2px_0px_theme(colors.neutral.500)] transition-all duration-200 hover:translate-x-1 hover:-translate-y-1 hover:bg-red-200 hover:text-red-700 hover:[box-shadow:-3px_3px_0px_black]" />
+        <IconTrash className="size-7 cursor-pointer rounded-md border border-black bg-red-50 p-1 text-red-500 [box-shadow:-2px_2px_0px_theme(colors.neutral.500)] transition-all duration-200 hover:translate-x-1 hover:-translate-y-1 hover:bg-red-200 hover:text-red-700 hover:[box-shadow:-3px_3px_0px_black]" />
 
         <button className="mt-1 mb-1 flex cursor-pointer items-center justify-center gap-2 rounded-md border border-black bg-cyan-50 px-3 py-1 text-neutral-600 [box-shadow:2px_2px_0px_theme(colors.neutral.500)] transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:bg-cyan-200 hover:[box-shadow:3px_3px_0px_black]">
-          <span>View Applicants</span>
-          <div className="relative m-1 flex shrink-0 items-center justify-center rounded-full bg-cyan-500 p-3 text-white">
-            <span className="absolute font-medium">6</span>
+          <span className="text-sm">View Applicants</span>
+          <div className="relative flex shrink-0 items-center justify-center rounded-full bg-cyan-500 size-5 p-1 text-white">
+            <span className="absolute font-medium text-[12px]">{task.applicantsCount}</span>
           </div>
         </button>
       </div>
